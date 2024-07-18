@@ -1,0 +1,66 @@
+$maximum-width: 1200px;
+
+// Breakpoints
+$breakpoint-medium: 760px;
+$breakpoint-large: 990px;
+
+// General spacing
+$space-vertical: 1rem;
+$space-horizontal: 20px;
+
+// Colors
+$color-a: blue;
+$color-b: grey;
+$color-c: white;
+
+/// @param number $maximum-width - The maximum width of component positive space. That's to say, the maximum width of the area in which information can be conveyed. This should not be used to affect horizontal negative space.
+/// @param number $breakpoint-medium - The browser width (in pixels) above which a browser should be regarded as medium size.
+/// @param number $breakpoint-large - The browser width (in pixels) above which a browser should be regarded as large size.
+/// @param number $space-vertical - The standard vertical space between elements.
+/// @param number $space-horizontal - The standard horizontal space between elements.
+/// @param color $color-a - The primary brand color.
+/// @param color $color-b - The secondary brand color.
+/// @param color $color-c - The tertiary brand color.
+@mixin configure(
+	$maximum-width: null,
+	$breakpoint-medium: null,
+	$breakpoint-large: null,
+	$space-vertical: null,
+	$space-horizontal: null,
+	$color-a: null,
+	$color-b: null,
+	$color-c: null
+) {
+
+	@if $maximum-width {
+		$maximum-width: $maximum-width !global;
+	}
+
+	// Breakpoints
+	@if $breakpoint-medium {
+		$breakpoint-medium: $breakpoint-medium !global;
+	}
+	@if $breakpoint-large {
+		$breakpoint-large: $breakpoint-large !global;
+	}
+
+	// General spacing
+	@if $space-vertical {
+		$space-vertical: $space-vertical !global;
+	}
+	@if $space-horizontal {
+		$space-horizontal: $space-horizontal !global;
+	}
+
+	// Colors
+	@if $color-a {
+		$color-a: $color-a !global;
+	}
+	@if $color-b {
+		$color-b: $color-b !global;
+	}
+	@if $color-c {
+		$color-c: $color-c !global;
+	}
+
+}

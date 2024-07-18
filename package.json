@@ -1,0 +1,33 @@
+{
+  "name": "components.creode.co.uk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@storybook/addon-essentials": "^8.2.4",
+    "@storybook/addon-interactions": "^8.2.4",
+    "@storybook/addon-links": "^8.2.4",
+    "@storybook/blocks": "^8.2.4",
+    "@storybook/html": "^8.2.4",
+    "@storybook/html-vite": "^8.2.4",
+    "@storybook/test": "^8.2.4",
+    "clipboard": "^2.0.11",
+    "prism-react-renderer": "^2.3.1",
+    "react-icons": "^5.2.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "sass": "^1.77.8",
+    "storybook": "^8.2.4",
+    "tailwindcss": "^3.4.6"
+  },
+  "dependencies": {
+    "react-code-blocks": "^0.1.6"
+  }
+}

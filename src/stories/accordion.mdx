@@ -1,0 +1,25 @@
+{/* accordion.mdx */}
+ 
+import { Canvas, Meta } from '@storybook/blocks';
+ 
+import * as AccordionStories from './accordion.stories';
+
+import Accordion from '../components/accordion/index?raw';
+
+import { CopyBlock, dracula } from 'react-code-blocks';
+
+import MyTemplate from '../components/accordion/main.html?raw';
+ 
+<Meta of={AccordionStories} />
+ 
+# Accordion
+ 
+A simple accordion component which will expand and collapse the content when the user clicks on the header.
+
+## HTML
+<CopyBlock classNames="code-block" showLineNumbers="true" language="html" theme={dracula} text={MyTemplate} />
+
+## JavaScript
+<CopyBlock showLineNumbers="true" language="javascript" theme={dracula} text={Accordion} />
+
+## ScSS

@@ -1,0 +1,4 @@
+@use './../components/accordion';
+
+@include accordion.configure();
+@include accordion.render();
